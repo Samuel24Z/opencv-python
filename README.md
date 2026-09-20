@@ -1,1 +1,1 @@
-## Fundamentos de visión por computador con Python
+## Fundamentos de visión por computador y OpenCV con Python
