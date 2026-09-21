@@ -2,7 +2,6 @@ import cv2 as cv
 import os
 
 os.chdir("..")
-os.chdir("..")
 rutaEjemplos = os.getcwd() + "\\img\\"
 img = cv.imread(rutaEjemplos + "messi5.jpg")
 img2 = img

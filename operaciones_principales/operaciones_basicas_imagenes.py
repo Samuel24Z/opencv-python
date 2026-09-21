@@ -2,8 +2,16 @@ import cv2 as cv
 import numpy as np
 import os
 
-os.chdir("..") # Regresamos un nivel arriba de la carpeta actual
-os.chdir("..") # Regresamos un nivel arriba de la carpeta actual
+""" 
+Si abrimos la terminal y presionamos "code ." en la raíz del proyecto 
+y usamos chdir(), entonces el programa de python se va comenzar a
+mover a partir de esa raíz que se eligió, sin embargo si se usa 
+"code ." desde un nivel arriba o uno abajo entonces ese directorio
+se va usar como el inicio para que el programa python se pueda 
+mover hacia otras rutas.
+En este caso nos movemos un nivel arriba con chdir('..')
+"""
+os.chdir("..") 
 rutaEjemplos = os.getcwd() + "\\img\\" # Devolvemos la ruta actual (un nivel átras)
 img = cv.imread(rutaEjemplos + "messi5.jpg")
 escalaGrises = cv.imread(rutaEjemplos + "messi5.jpg", cv.IMREAD_GRAYSCALE)
