@@ -3,6 +3,7 @@ import numpy as np
 import os
 
 os.chdir("..") # Regresamos un nivel arriba de la carpeta actual
+os.chdir("..") # Regresamos un nivel arriba de la carpeta actual
 rutaEjemplos = os.getcwd() + "\\img\\" # Devolvemos la ruta actual (un nivel átras)
 img = cv.imread(rutaEjemplos + "messi5.jpg")
 escalaGrises = cv.imread(rutaEjemplos + "messi5.jpg", cv.IMREAD_GRAYSCALE)
